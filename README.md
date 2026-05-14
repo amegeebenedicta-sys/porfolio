@@ -1,20 +1,22 @@
 # Portfolio
 
-Site portfolio construit avec [Vite](https://vitejs.dev/) et TypeScript.
+Site statique en **HTML**, **CSS** et un peu de **JavaScript** (menu mobile). Aucun build requis.
 
-## Demarrage
+## GitHub Pages
 
-`ash
-npm install
-npm run dev
-`
+1. Deposez ce contenu sur la branche main.
+2. Sur GitHub : **Settings** > **Pages**.
+3. **Source** : *Deploy from a branch* — branche **main**, dossier **/** (racine).
+4. Le site sera disponible sur : https://amegeebenedicta-sys.github.io/porfolio/
 
-Ouvrir l URL affichee (souvent http://localhost:5173/).
+Les liens vers styles.css, script.js et avicon.svg sont relatifs : pas de configuration supplementaire.
 
-## Build production
+## Modifier le site
 
-`ash
-npm run build
-`
+- Textes et sections : index.html
+- Apparence : styles.css
+- Menu (annee dans le pied de page) : script.js
 
-Les fichiers generes sont dans le dossier dist/.
+## Previsualiser en local
+
+Ouvrez index.html dans le navigateur, ou lancez un petit serveur HTTP dans ce dossier (ex. extension Live Server dans VS Code).

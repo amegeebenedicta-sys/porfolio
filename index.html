@@ -1,24 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio — projets, compétences et contact."
-    />
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <a class="skip-link" href="#contenu">Aller au contenu</a>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Portfolio — projets, compétences et contact." />
+<title>Portfolio</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+<a class="logo" href="#">Portfolio<span>.</span></a>
+<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+<nav class="nav" id="site-nav" aria-label="Principal">
+<a href="#a-propos">À propos</a>
+<a href="#projets">Projets</a>
+<a href="#competences">Compétences</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<main id="contenu">
+<section class="hero" aria-labelledby="hero-title">
+<span class="hero-badge">Disponible / en veille — à adapter</span>
+<h1 id="hero-title">Bonjour, je suis <span style="color:var(--accent)">Votre nom</span></h1>
+<p class="hero-lead">Développeur·se / designer / autre — une phrase qui résume ce que vous faites. Modifiez ce texte dans <code style="font-size:0.9em;opacity:0.85">index.html</code>.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#contact">Me contacter</a>
+<a class="btn btn-ghost" href="#projets">Voir les projets</a>
+</div>
+</section>
+<section id="a-propos" aria-labelledby="about-title">
+<h2 class="section-title" id="about-title">À propos</h2>
+<p class="section-intro">Quelques paragraphes sur votre parcours, ce que vous cherchez (CDI, freelance, stage), et ce qui vous intéresse techniquement.</p>
+<div class="about-grid">
+<div class="about-card"><h3>Parcours</h3><p>Formation, expériences clés, domaines où vous excellez.</p></div>
+<div class="about-card"><h3>Ce que j'aime faire</h3><p>Ex. produits soignés, perf web, data viz, open source.</p></div>
+</div>
+</section>
+<section id="projets" aria-labelledby="projects-title">
+<h2 class="section-title" id="projects-title">Projets</h2>
+<p class="section-intro">Sélection de réalisations. Remplacez les exemples par vos vrais projets et liens.</p>
+<div class="projects">
+<a class="project-card" href="#projets"><div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div><h3>Projet exemple</h3><p>Remplacez par une vraie description : problème résolu, votre rôle, résultat.</p><span class="project-link">Voir le projet →</span></a>
+<a class="project-card" href="https://github.com/amegeebenedicta-sys/porfolio" target="_blank" rel="noopener noreferrer"><div class="project-tags"><span class="tag">GitHub</span></div><h3>Ce dépôt</h3><p>Portfolio statique, prêt pour GitHub Pages.</p><span class="project-link">Voir sur GitHub →</span></a>
+</div>
+</section>
+<section id="competences" aria-labelledby="skills-title">
+<h2 class="section-title" id="skills-title">Compétences</h2>
+<p class="section-intro">Stack, outils et sujets sur lesquels vous intervenez.</p>
+<div class="skills-list">
+<span class="skill-pill">HTML / CSS</span>
+<span class="skill-pill">JavaScript</span>
+<span class="skill-pill">Accessibilité</span>
+<span class="skill-pill">Git</span>
+<span class="skill-pill">À compléter</span>
+</div>
+</section>
+<section id="contact" aria-labelledby="contact-title">
+<h2 class="section-title" id="contact-title">Contact</h2>
+<p class="section-intro">Liens vers LinkedIn, GitHub, e-mail, ou un formulaire.</p>
+<div class="contact-box">
+<p>Échangeons sur votre prochain projet ou une opportunité.</p>
+<div class="contact-links">
+<a class="btn btn-primary" href="mailto:vous@exemple.com">E-mail</a>
+<a class="btn btn-ghost" href="https://github.com/amegeebenedicta-sys" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a class="btn btn-ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer"><p>© <span id="year"></span> — Site statique HTML/CSS. Déployable sur GitHub Pages.</p></footer>
+<script src="script.js" defer></script>
+</body>
 </html>
